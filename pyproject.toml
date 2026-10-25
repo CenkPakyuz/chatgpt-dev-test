@@ -1,0 +1,17 @@
+[project]
+name = "chatgpt-dev-test"
+version = "0.1.0"
+description = "Small Python project for learning Git, testing, CI, and ChatGPT-assisted development."
+readme = "README.md"
+requires-python = ">=3.9"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+target-version = "py39"
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
